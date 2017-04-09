@@ -19,7 +19,7 @@
     <div class="container-fluid" style="padding-top: 1%; padding-bottom: 1%">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1 style="color:white">Project Name</h1>
+                <h1 style="color:white">Surviving Hogwarts</h1>
             </div>
         </div>
     </div>
@@ -27,7 +27,61 @@
     <div class="container-fluid" style="background-color: #E4CAF7">
         <div class="row">
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <h1 class="member_name">name</h1>
+                <h2 class="member_name">Voldemort</h2>
+
+                <div class="task_wrapper">
+                  <div class="task">Nose Job Appointment</div><br>
+                  <div class="task">Sneak a basilisk into my room</div><br>
+                  <div class="task">Kill dad</div> <br>
+
+                  <div id="new_task_container1"></div>
+                  <div id="1" class="new_task">+ New Task</div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h2 class="member_name">Harry Potter</h2>
+
+                <div class="task_wrapper">
+                  <div class="task">Avoid Moaning Myrtle</div><br>
+                  <div class="task">Confess love for Ginny</div><br>
+                  <div class="task">Save the world</div><br>
+
+                  <div id="new_task_container2"></div>
+                  <div id="2" class="new_task">+ New Task</div>
+                </div>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h2 class="member_name">Hermione Granger</h2>
+
+                <div class="task_wrapper">
+                  <div class="task">Brew Polyjuice Potion (no cat hair!!)</div><br>
+                  <div class="task">Memorize Hogwarts, A History</div><br>
+                  <div class="task">Punch Draco in the Nose</div><br>
+
+                  <div id="new_task_container3"></div>
+                  <div id="3" class="new_task">+ New Task</div>
+                </div>
+            </div>
+
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <h2 class="member_name">Severus Snape</h2>
+
+                <div class="task_wrapper">
+                  <div class="task">Protect Lily's Son</div><br>
+                  <div class="task">Wash my hair</div><br>
+
+                  <div id="new_task_container4"></div>
+                  <div id="4" class="new_task">+ New Task</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 4%">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <!-- FILLER -->
             </div>
         </div>
     </div>
@@ -36,5 +90,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Javascript -->
+    <script>
+      $(document).ready(function() {
+
+        $(".new_task").click(function() {
+          
+          var task_container = "#new_task_container" + $(this).attr('id');
+          $(task_container).append('<div class="task">Task</div> <br>');
+        });
+
+        $(".task").click(function () {
+          //var taskTags = $(".task");
+
+          // if ( taskTags.parent().is( "strike" ) ) {
+          //     taskTags.unwrap("strike");
+          // } else {
+            $(this).wrap("<strike>");
+          // }
+        });
+
+
+      });
+    </script>
   </body>
 </html>
