@@ -1,19 +1,72 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Form Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bitcamp 2017</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
   </head>
-
   <body>
-      <form>
-          Project name <br>
-          <input name="project-name" type="text"> <br> <br>
 
-          Number of Members <br>
-          <input name="numMembers" type="text"><br>
+    <div class="container-fluid" style="padding-top: 5%; padding-bottom: 5%">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <span style="color:white">Skejewel</span>
+                <img style="width: 8%" src="http://www.clipartkid.com/images/406/stunning-diamond-border-clip-art-958-x-1028-72-kb-png-TNo5Up-clipart.png">
+            </div>
+        </div>
+    </div>
 
-          <input type="submit">
+    <div class="container" id="form">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <!-- FILLER -->
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <form>
+          <div class="form-group">
+            <label for="project_name">Project Name</label>
+            <input type="text" class="form-control" id="project_name" placeholder="Skedaddle">
+          </div>
+
+          <h1 style="margin-top: 7%; margin-bottom: 2%">Team Members</h1>
+
+          <div class="form-group">
+            <label for="member1">Team Member 1</label>
+            <input type="text" class="form-control" id="member1" placeholder="Treasa">
+          </div>
+
+          <div class="form-group">
+            <label for="member2">Team Member 2</label>
+            <input type="text" class="form-control" id="member2" placeholder="Christa">
+          </div>
+
+          <div class="form-group">
+            <label for="member2">Team Member 3</label>
+            <input type="text" class="form-control" id="member3" placeholder="Kristi">
+          </div>
+
+          <div class="form-group">
+            <label for="member2">Team Member 4</label>
+            <input type="text" class="form-control" id="member4" placeholder="Atsuko">
+          </div>
+
+          <button style="margin-top: 1%; margin-bottom: 3%" id="submit" type="submit" class="btn btn-default">Submit</button>
       </form>
+    </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
